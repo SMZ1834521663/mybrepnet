@@ -1,0 +1,12 @@
+python -m pipeline.quickstart --dataset_dir /data/public/smz24/fusion360_gallery/s2.0.1 --num_workers 5
+python -m train.train --dataset_file /data/public/smz24/fusion360_gallery/s2.0.1/processed/dataset.json --dataset_dir /data/public/smz24/fusion360_gallery/s2.0.1/processed/ --max_epochs 200
+screen -S mysession
+然后运行2命令 ctrl+A然后按D以脱离当前screen会话，但是程序会继续运行，screen -r mysession会回到这个会话
+
+
+python -m me.my_quickstart --dataset_dir /data/public/smz24/fusion360_gallery/s2.0.1 --num_workers 5
+
+python -m eval.test --dataset_file /data/public/smz24/fusion360_gallery/s2.0.1/processed/dataset.json --dataset_dir /data/public/smz24/fusion360_gallery/s2.0.1/processed/ --model ./logs/0627/132847/checkpoints/epoch=20-step=2246.ckpt
+
+screen -ls   #列出所有会话
+screen -X -S <session_id> quit   #删除多余会话

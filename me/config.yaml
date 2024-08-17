@@ -1,0 +1,11 @@
+#basic
+device: 0
+epochs: 50
+dataset_dir: /data/public/smz24/fusion360_gallery/s2.0.1/processed_me/
+input_features: "./feature_lists/all.json"
+exp_path: './exp'
+
+dropout: 0.3
+num_classes: 8
+lr: 0.001
+batch_size: 200
