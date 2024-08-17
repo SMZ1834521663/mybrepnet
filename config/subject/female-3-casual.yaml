@@ -1,7 +1,0 @@
-data_root: "data/people_snapshot_public/female-3-casual"
-human: female-3-casual
-ann_file: "data/people_snapshot_public/female-3-casual/annots.npy" #//cam
-frame_range: [0, 445, 4]
-num_train_frame: 445
-test_frame_range: [446, 647, 4]
-max_frame: 647
