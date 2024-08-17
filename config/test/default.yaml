@@ -1,0 +1,13 @@
+dataset: 'CocoVal'
+batch_size: 1
+epoch: -1
+collator: ''
+sampler: 'default'
+batch_sampler: 'default'
+sampler_meta: 
+  min_hw: [480, 640] 
+  max_hw: [480, 640]
+  strategy: 'origin'
+frame_sampler_interval: 30
+begin_sampler_ind: 0
+num_sampler_ind: -1

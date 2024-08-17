@@ -1,0 +1,9 @@
+data_root: "data/zju_mocap/CoreView_393"
+human: CoreView_393
+ann_file: "data/zju_mocap/CoreView_393/annots.npy"
+frame_range: [0, 511, 1]
+num_train_frame: 511
+# test_frame_range: [0, 511, 30]
+test_frame_range: [0, 511, 1]
+test_novel_range: [526, 647, 30]
+max_frame: 647

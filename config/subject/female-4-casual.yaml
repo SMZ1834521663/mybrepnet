@@ -1,0 +1,7 @@
+data_root: "data/people_snapshot_public/female-4-casual"
+human: female-4-casual
+ann_file: "data/people_snapshot_public/female-4-casual/annots.npy" #//cam
+frame_range: [0, 335, 4]
+num_train_frame: 335
+test_frame_range: [335, 523, 4]
+max_frame: 523
